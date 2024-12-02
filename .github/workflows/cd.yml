@@ -29,7 +29,7 @@ jobs:
               uses: mscno/setup-goose@v1
 
             - name: check diff
-              uses: git diff HEAD
+              run: git diff HEAD
 
             - name: Build
               run: scripts/buildprod.sh
